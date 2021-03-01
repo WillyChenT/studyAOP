@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-4.2.xsd"
+       xmlns:aop="http://www.springframework.org/schema/aop">
+
+<!--    <bean id="video" class="org.ming.sp.domain.Video" scope="singleton">-->
+<!--        <property name="id" value="9"/>-->
+<!--        <property name="title" value="Spring 5.X課程" />-->
+<!--    </bean>-->
+
+<!--    <bean class="org.ming.sp.processor.CoustomBeanPostProcessor"></bean>-->
+
+<!--    <bean id="video2" class="org.ming.sp.domain.Video2" scope="singleton" parent="video">-->
+
+<!--        <property name="summary" value="這是summary"/>-->
+
+<!--    </bean>-->
+<!--    <bean id="video" class="org.ming.sp.domain.Video" scope="singleton">-->
+<!--        <constructor-arg name="title" value="測試課程依"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--    <bean id="video" class="org.ming.sp.domain.Video" scope="prototype">-->
+<!--        &lt;!&ndash;list注入&ndash;&gt;-->
+<!--        <property name="chapterList">-->
+<!--            <list>-->
+<!--                <value>ch1 SpringBoot</value>-->
+<!--                <value>ch2 Mybatis</value>-->
+<!--                <value>ch3 Spring</value>-->
+<!--            </list>-->
+<!--        </property>-->
+
+<!--        <property name="videoMap">-->
+<!--            <map>-->
+<!--                <entry key="1" value="Spring課程"></entry>-->
+<!--                <entry key="2" value="測試課程"></entry>-->
+<!--                <entry key="3" value="JavaSE"></entry>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    <bean id="videoOrder" class="org.ming.sp.domain.VideoOrder" autowire="byName">-->
+<!--        <property name="id" value="8"/>-->
+<!--        <property name="outTradeNo" value="23456ddd" />-->
+<!--        <property name="video" ref="video"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="timeHandler" class="org.ming.sp.aop.TimeHandler"></bean>-->
+<!--    <bean id="videoService" class="org.ming.sp.service.VideoServiceImpl"></bean>-->
+
+<!--    &lt;!&ndash;aop設定&ndash;&gt;-->
+<!--    <aop:config>-->
+<!--        <aop:aspect id="timeAspect" ref="timeHandler">-->
+<!--            &lt;!&ndash;定義切入點&ndash;&gt;-->
+<!--            <aop:pointcut id="allMethodLogPointCut" expression="execution(* org.ming.sp.service.VideoService.*(..))"/>-->
+<!--            &lt;!&ndash;配置前後置通知&ndash;&gt;-->
+<!--            <aop:before method="printBefore" pointcut-ref="allMethodLogPointCut"/>-->
+<!--            <aop:after method="printAfter" pointcut-ref="allMethodLogPointCut"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+   
+
+</beans>
